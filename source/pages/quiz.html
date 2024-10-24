@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulukova: Fun with calculus!</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Kalkulukova</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="topics.html">Learn</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <h1 class="quiz-title">Test Your Knowledge: Calculus Quiz</h1>
+        <p class="quiz-description">Answer the following questions to see how well you understand limits, derivatives, and integrals.</p>
+
+        <!-- Quiz will be generated here -->
+        <div id="quiz-container"></div>
+
+        <!-- Submit Button -->
+        <button onclick="submitQuiz()">Submit Quiz</button>
+
+        <!-- Result Section -->
+        <div id="quiz-result" class="quiz-result" style="display: none;">
+            <h3>Your Result:</h3>
+            <p id="result-text"></p>
+        </div>
+
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

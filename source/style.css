@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar styles */
+header {
+    background-color: #ff2c2c;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Homepage Section */
+.home-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo-img {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff2c2c;
+    margin-left: 1.5rem;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #555;
+    max-width: 600px;
+}
+
+/* Learn Section */
+.learn-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.learn-title {
+    font-size: 2.5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.learn-instruction {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.learn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.learn-item {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 180px;
+    color: white;
+}
+
+.limit-item {
+    border: 2px solid #f2b82e;
+}
+
+.derivatives-item {
+    border: 2px solid #63c280;
+}
+
+.integral-item {
+    border: 2px solid #244058;
+}
+
+.learn-item:hover {
+    transform: scale(1.05);
+}
+
+.learn-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.learn-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.learn-item h2 {
+    font-size: 1.5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: color 0.3s;
+}
+
+.limit-title {
+    color: #f2b82e;
+}
+
+.limit-title:hover {
+    color: #d7a02a;
+}
+
+.derivatives-title {
+    color: #63c280;
+}
+
+.derivatives-title:hover {
+    color: #539f69;
+}
+
+.integral-title {
+    color: #244058;
+}
+
+.integral-title:hover {
+    color: #1d3344;
+}
+
+/* Content Section */
+.content-section {
+    padding: 2rem;
+}
+
+.topic-limit {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #efe5ce;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topic-derivative {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #c0efcf;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topic-integral {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #d1e7fb;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topic-limit-title {
+    font-size: 3rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: #f2b82e;
+    margin-bottom: 2rem;
+}
+
+.topic-derivative-title {
+    font-size: 3rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: #63c280;
+    margin-bottom: 2rem;
+}
+
+.topic-integral-title {
+    font-size: 3rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    color: #244058;
+    margin-bottom: 2rem;
+}
+
+.topic-content {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+.topic-content h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Quiz Section */
+.quiz-section {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 2.5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+}
+
+.quiz-description {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.quiz-topic {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.quiz-topic-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.quiz-form {
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    background-color: #58cc02;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #4ba302;
+}
+
+.quiz-result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section {
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-it {
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #555;
+    max-width: 600px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #ff2c2c;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-active .nav-links {
+        display: flex;
+    }
+
+    .learn-container {
+            flex-direction: column;
+    }
+}
